@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deadpool</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="topSection">
+                <div class="navigatiosideBar">
+                    <div class="data sideTwoDivs">
+                        <div class="sideNav">
+                            <div class="navIcon albums">
+                                <div><ion-icon name="disc-outline"></ion-icon></div>
+                                <div>Albums</div>
+                            </div>
+                            <div class="navIcon favorite">
+                                <div><ion-icon name="heart-outline"></ion-icon></div>
+                                <div>Favorite</div>
+                            </div>
+                            <div class="navIcon recently">
+                                <a href="#recentList">
+                                    <div><ion-icon name="headset-outline"></ion-icon></div>
+                                    <div>Recently</div>
+                                </a>
+                                
+                            </div>
+                        </div>
+                        <div class="about">
+                            <div class="navIcon">
+                                <div><ion-icon name="information-circle-outline"></ion-icon></div>
+                                <div>About</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Listdata">
+                    <div class="data">
+                        <!-- <div class="iconsbg">
+                            <span></span>
+                        </div> -->
+                        <div class="icons">
+                            <ion-icon class="menu-outline" name="menu-outline"></ion-icon>
+                        </div>
+                        <div>
+                            <div class="banner">
+                                <img class="topbannerimg" src="https://images.unsplash.com/photo-1598518141787-5be70e839626" />
+                            </div>
+
+                            <!-- small song card -->
+                            <div class="banner sm_banner">
+                                <div class="titlenxtprv">
+                                    <div class="titles">Tollywood Song</div>
+                                    <div class="nxtPrev">
+                                        <ion-icon name="arrow-back-outline" id="newprev"></ion-icon>
+                                        <ion-icon name="arrow-forward-outline" id="newnxt"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="songCard newSongsList">
+                                    
+
+                                </div>
+                            </div>
+                            
+                            <!-- Old song card -->
+                            <div class="banner sm_banner">
+                                <div class="titlenxtprv">
+                                    <div class="titles">bollywood Song</div>
+                                    <div class="nxtPrev">
+                                        <ion-icon name="arrow-back-outline" id="oldprev"></ion-icon>
+                                        <ion-icon name="arrow-forward-outline" id="oldnxt"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="songCard oldSongsList">
+                                    
+
+                                </div>
+                            </div>
+
+                            <!-- Recent song card -->
+                            <!-- <div class="banner sm_banner" id="recentList">
+                                <div class="titlenxtprv">
+                                    <div class="titles">Recent Song</div>
+                                    <div class="nxtPrev">
+                                        <ion-icon name="arrow-back-outline" id="recentprev"></ion-icon>
+                                        <ion-icon name="arrow-forward-outline" id="recentnxt"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="songCard recentSongsList">
+                                    <div class="smallsongcard">
+                                        <img class="smallimg" src="https://images.unsplash.com/photo-1588032786045-59cefda005c0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8c29uZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" />
+                                        <div class="titlesubtitle">
+                                            <div class="songName">Ola Olaala Ala</div>
+                                            <div class="movieName">Orange</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            
+            <audio class="audio" src=""></audio>
+            <div class="bottomPlayer">
+                
+                <div class="songbt">
+                    <div class="songData cols">
+                        <div>
+                            <img class="songDataimg" src=" " />
+                        </div>
+                        <div>
+                            <span class="song_title"> </span>
+                            <span class="song_subTitle"> </span>
+                        </div>
+                    </div>
+                    <div class="audio cols">
+                        <div class="startEnd">
+                            <span class="startTime">0:00</span> /
+                            <span class="endTime">0:00</span>
+                        </div>
+                        <div class="audioIcons">
+                            <div class="repeatIcon"><ion-icon name="repeat-outline">repeat</ion-icon></div>
+                            <div><ion-icon class="prevSong" name="play-back-outline"></ion-icon></div>
+                            <div class="playsongicon">
+                                <ion-icon name="play-circle-outline"></ion-icon>
+                            </div>
+                            <div><ion-icon class="nextSong" name="play-forward-outline"></ion-icon></div>
+                            <!-- <div class="repeaticonsList">
+                                <ion-icon name="shuffle-outline"></ion-icon>
+                            </div> -->
+                        </div>
+                    </div>
+                    <!-- <div  class="cols">
+                        <div class="volumebar">
+                            <div><ion-icon name="volume-high-outline"></ion-icon></div>
+                            <div class="volume"></div>
+                        </div>
+                    </div> -->
+                </div>
+
+                <div class="process">
+                    <div class="processBar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+<!-- <script src="DB.js"></script> -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
