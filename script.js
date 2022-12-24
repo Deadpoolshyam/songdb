@@ -367,7 +367,7 @@ let basicOperations = ((DOMClassList, musicDB, hindimusicList )=> {
               firstPlay(ids);
               playCurrentSong();
               break;
-            case "shuffle":
+            case "shuffle_outline":
               let randomIndex = Math.floor((Math.random() * musicDB.length) + 1);
               do{
                 randomIndex = Math.floor((Math.random() * musicDB.length) + 1);
@@ -470,9 +470,9 @@ let basicOperations = ((DOMClassList, musicDB, hindimusicList )=> {
           repeatBtn.innerHTML = `<ion-icon name="reload-outline">repeat_one</ion-icon>`;
           break;
         case "repeat_one":
-          repeatBtn.innerHTML = `<ion-icon name="shuffle-outline">shuffle</ion-icon>`;
+          repeatBtn.innerHTML = `<ion-icon name="shuffle-outline">shuffle_outline</ion-icon>`;
           break;
-        case "shuffle":
+        case "shuffle_outline":
           repeatBtn.innerHTML = `<ion-icon name="repeat-outline">repeat</ion-icon>`;
           break;
       }
